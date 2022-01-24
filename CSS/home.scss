@@ -53,21 +53,27 @@
     .header{
         .nav{
             .navbar{
-                a:not(:first-child){
+                a{
                     display: none;
                 }
                 a.icon{
-                    display: flex;
+                    display: block;
                 }
             }
+        }
+    }
+}
+
+@media screen and (max-width: 600px){
+    .header{
+        .nav{
             .responsive{
-                position: relative;
+                background-color: #fcb0b3;
                 a{
                     display: flex;
-                    flex-direction: column;
+                    padding-left: 2%;
                 }
             }
-
         }
     }
 }

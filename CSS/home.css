@@ -48,18 +48,20 @@
 }
 
 @media screen and (max-width: 600px) {
-  .header .nav .navbar a:not(:first-child) {
+  .header .nav .navbar a {
     display: none;
   }
   .header .nav .navbar a.icon {
-    display: flex;
+    display: block;
   }
+}
+@media screen and (max-width: 600px) {
   .header .nav .responsive {
-    position: relative;
+    background-color: #fcb0b3;
   }
   .header .nav .responsive a {
     display: flex;
-    flex-direction: column;
+    padding-left: 2%;
   }
 }
 .landing-page {
