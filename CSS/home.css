@@ -47,7 +47,7 @@
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 820px) {
   .header .nav .navbar a {
     display: none;
   }
@@ -55,7 +55,7 @@
     display: block;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 820px) {
   .header .nav .responsive {
     background-color: #fcb0b3;
   }
@@ -91,7 +91,7 @@
   width: 0%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 820px) {
   .landing-page {
     flex-direction: column;
     justify-content: center;
@@ -122,7 +122,7 @@
   color: #93CAED;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 820px) {
   .footer {
     flex-direction: column;
     justify-content: center;
