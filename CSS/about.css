@@ -34,10 +34,10 @@
   margin: 10% 0;
 }
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 920px) {
   .about-page {
     margin: 0 0 0 15%;
-    font-size: 60%;
+    font-size: 70%;
     text-align: left;
     word-spacing: 0;
   }

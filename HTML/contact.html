@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="../CSS/home.css">
+    <link rel="stylesheet" href="../CSS/contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -20,7 +21,7 @@
                 <a href="../HTML/portfolio.html">Portfolio</a>
                 <a href="../HTML/about.html">About</a>
                 <a href="../HTML/service.html">Services</a>
-                <a href="../HTML/contact.html">Contact</a>
+                <a href="../HTML/contact.html"">Contact</a>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                     <i class="fa fa-bars"></i>
                 </a>
@@ -29,18 +30,49 @@
     </div>
     <!-- Header End -->
     <!-- Landing Page -->
-    <div class="landing-page">
-        <div class="profile">
-            <img src="../IMAGES/Profile.jpeg">
+    <div class="contact-page">
+        <div class="contact">
+            <button class="open-button" onclick="openForm()">Discuss Project</button>
+            <div class="form-popup" id="myForm">
+                <form class="form-container">
+                    <h1>Discuss Project</h1>
+            
+                    <input type="text" placeholder="Name" name="name" required>
+
+                
+                    <input type="text" placeholder="Email" name="email" required>
+
+                   
+                    <input type="number" placeholder="+977-" name="number" required>
+
+                    <label for="name"><h4>Message</h4></label>
+                    <textarea type="text" name="message" rows="5" cols="45" >
+                    Write Something......
+                    </textarea><br/>
+                    <button type="submit" class="btn">Send Message</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+            </div>
         </div>
-        <div class="profile-text">
-            <h1 class="t-1">Sanush Shakya</h1>
-            <h3 class="t-1">WEB DESIGNER</h3>
-            <p class="t-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, impedit. 
-                Obcaecati harum eaque reiciendis. Doloremque pariatur magni itaque fugit, 
-                rerum ab est cum nostrum, repellat placeat modi? 
-                Earum, ullam neque.</p>
-            <button class="btn" type="button">Hire Cost</button>
+        <div class="contact contact-1">
+            <div class="label-name">
+                CONTACT
+            </div>
+            <div class="contact-info">
+                <h class="ci-1">Phone</h3>
+                <h5 class="ci-1">+977-9861359639</h5>
+                <p class="ci-1"></p>
+            </div>
+            <div class="contact-info">
+                <h3 class="ci-1">Email</h3>
+                <h5 class="ci-1">shakyasanush7@gmail.com</h5>
+                <p class="ci-1"></p>
+            </div>
+            <div class="contact-info">
+                <h3 class="ci-1">Address</h3>
+                <h5 class="ci-1">Nepal, Bagmati</h5>
+                <p class="ci-1">Bhaktapur, Jagati-7</p>
+            </div>
         </div>
     </div>
     <!-- Landing Page End -->
@@ -72,5 +104,6 @@
     <!-- Footer End -->
 
     <script src="../JS/home.js"></script>
+    <script src="../JS/contact.js"></script>
 </body>
 </html>
