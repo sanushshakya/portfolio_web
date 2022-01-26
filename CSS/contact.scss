@@ -105,8 +105,8 @@
             }
         }
         .contact-1{
-            margin: 30% 0 0 5%;
-            width: 100%;
+            margin: 30% 0 0 0;
+            max-width: 100%;
         }
     }
 }
@@ -120,7 +120,6 @@
                 width: 120%;
                 .form-container{
                     font-size: 130%;
-                    
                 }
             }
         }

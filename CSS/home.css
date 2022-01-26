@@ -29,11 +29,10 @@
 }
 .header .nav .navbar {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 .header .nav .navbar a {
-  display: flex;
   text-decoration: none;
   color: #000000;
   font-weight: 300;
@@ -50,20 +49,53 @@
 }
 
 @media screen and (max-width: 820px) {
+  .header .nav .navbar {
+    display: block;
+  }
   .header .nav .navbar a {
     display: none;
   }
   .header .nav .navbar a.icon {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header .nav .navbar a.icon .up {
+    position: absolute;
+    display: none;
   }
 }
 @media screen and (max-width: 820px) {
   .header .nav .responsive {
-    background-color: #fcb0b3;
+    background-color: #93CAED;
+    margin: 0 10%;
+    padding-top: 5%;
+    border: 0;
+    border-radius: 5%;
+    opacity: 0.6;
   }
   .header .nav .responsive a {
     display: flex;
-    padding-left: 2%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+    font-size: 110%;
+  }
+  .header .nav .responsive a.hover {
+    color: unset;
+  }
+  .header .nav .responsive a.active {
+    color: #ffffff;
+  }
+  .header .nav .responsive a.icon {
+    color: #ffffff;
+  }
+  .header .nav .responsive a.icon .down {
+    display: none;
+  }
+  .header .nav .responsive a.icon .up {
+    display: flex;
+    position: relative;
   }
 }
 .landing-page {
@@ -157,6 +189,7 @@
   .testimonials {
     margin: 0;
     margin-bottom: 10%;
+    margin-left: 10%;
   }
   .testimonials .tes-1 img {
     max-width: 50%;
@@ -209,10 +242,9 @@
 
 .footer {
   display: flex;
-  flex-direction: row;
-  text-align: justify;
   align-items: center;
   justify-content: center;
+  text-align: center;
   margin-bottom: 3%;
 }
 .footer .list:not(:first-child) {
@@ -234,11 +266,12 @@
 @media screen and (max-width: 820px) {
   .footer {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin: 0;
   }
   .footer .list {
-    text-align: center;
+    margin-bottom: 5%;
+  }
+  .footer .foot-logo {
     margin-bottom: 5%;
   }
 }

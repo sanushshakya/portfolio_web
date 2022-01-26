@@ -99,8 +99,8 @@
     margin-left: 15%;
   }
   .contact-page .contact-1 {
-    margin: 30% 0 0 5%;
-    width: 100%;
+    margin: 30% 0 0 0;
+    max-width: 100%;
   }
 }
 @media screen and (min-width: 620px) and (max-width: 920px) {

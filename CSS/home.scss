@@ -32,11 +32,9 @@
         }
         .navbar{
         display: flex;
-        align-items: center;
         justify-content: center;
-
+        align-items: center;
             a{
-                display: flex;
                 text-decoration: none;
                 color: #000000;
                 font-weight: 300;
@@ -59,12 +57,21 @@
     .header{
         .nav{
             .navbar{
+                display: block;
                 a{
                     display: none;
                 }
                 a.icon{
-                    display: block;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    .up{
+                        position: absolute;
+                        display: none;
+                    }
                 }
+               
             }
         }
     }
@@ -74,12 +81,38 @@
     .header{
         .nav{
             .responsive{
-                background-color: #fcb0b3;
+                background-color: #93CAED;
+                margin: 0 10%;
+                padding-top: 5%;
+                border: 0;
+                border-radius: 5%;
+                opacity: 0.6;
                 a{
                     display: flex;
-                    padding-left: 2%;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 5%;
+                    font-size: 110%;
                 }
+                a.hover{
+                    color: unset;
+                }
+                a.active{
+                    color: #ffffff;
+                }
+                a.icon{
+                    color: #ffffff;
+                    .down{
+                        display: none;
+                    }
+                    .up{
+                        display: flex;
+                        position: relative;
+                    }
+                }
+            
             }
+
         }
     }
 }
@@ -192,6 +225,7 @@
         
         margin: 0;
         margin-bottom: 10%;
+        margin-left: 10%;
         .tes-1{
             img{
                 max-width: 50% ;
@@ -255,10 +289,9 @@
 
 .footer{
     display: flex;
-    flex-direction: row;
-    text-align: justify;
     align-items: center;
     justify-content: center;
+    text-align: center;
     margin-bottom: 3%;
     .list:not(:first-child){
         margin-left: 10%;
@@ -283,10 +316,11 @@
 @media screen and (max-width:820px) {
     .footer{
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        margin: 0;
         .list{
-            text-align: center;
+            margin-bottom: 5%;
+        }
+        .foot-logo{
             margin-bottom: 5%;
         }
     }
