@@ -39,7 +39,7 @@
                 display: flex;
                 text-decoration: none;
                 color: #000000;
-                font-size: 18px;
+                font-weight: 300;
                 margin-right: 1%;
             }
             a:hover{
@@ -116,12 +116,142 @@
 @media screen and (max-width:820px) {
     .landing-page{
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        // margin: 0;
+
+        .profile{
+            img{
+                max-width: 160%;
+            }
+        }
     }
 }
 
 // Landing Page End
+
+.track{
+    display: flex;
+    flex-direction: row;
+    margin: 0 15% 10% 15%;
+    border: 0;
+    border-radius: 10px;
+    background-color: #93CAED;
+    padding: 2% 0;
+
+    .record{
+        flex: 25%;
+        color: #ffffff;
+        text-align: center;
+        
+    }
+    .record:not(:last-child){
+        border-right: 1px solid #ffffff;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .track{
+        flex-direction: column;
+        .record{
+            font-size: 110%;
+            margin: 5% 0;
+            border-right: 0;
+            border-bottom: 1px solid #ffffff;
+        }
+    }
+}
+
+// Track Record End
+
+.testimonials{
+    display: flex;
+    flex-direction: row;
+    margin: 0 15% 10% 15%;
+    .tes-1{
+        flex: 50%;
+        img{
+            max-width: 45%;
+            border-radius: 5%;
+        
+        }
+        .line{
+            margin-bottom: 2%;
+        }
+    }
+    .tes-t{
+        margin: 5% 0 0 -20%;
+        span{
+            color: #93CAED;
+            font-size: 500%;
+            
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .testimonials{
+        
+        margin: 0;
+        margin-bottom: 10%;
+        .tes-1{
+            img{
+                max-width: 50% ;
+            }
+        }
+        .tes-t{
+            margin: -1% 0 0 -30%;
+            font-size: 50%;
+        }
+    }
+    
+}
+@media screen and (max-width: 920px) and (min-width: 620px){
+    .testimonials{
+        margin: 0;
+        margin-bottom: 10%;
+        
+        .tes-1{
+            img{
+                max-width: 50% ;
+            }
+        }
+        .tes-t{
+            margin: -1% 0 0 -30%;
+            font-size: 100%
+        }
+    }
+    
+}
+
+//Testimonials END
+
+.contact-bar{
+    text-align: center;
+    background-color: #93CAED;
+    margin: 0 15% 10% 15%;
+    border: 0;
+    border-radius: 5%;
+    padding: 2%;
+    max-width: 75%;
+    
+    .line{
+        margin-bottom: 2%;
+        color: #ffffff;
+    }
+    h1{
+        font-weight: 500;
+    }
+    p{
+        font-weight: 300;
+    }
+    .btn{
+        border-radius: 10%;
+    }
+    .cb-1{
+        margin: 0 48%;
+        width: 5%;
+        border-top: 0.5px solid #ffffff;
+    }
+}
 
 .footer{
     display: flex;
@@ -135,7 +265,7 @@
     }
     .list{
         label{
-            font-size: 175%;
+            font-size: 120%;
         }
         p{
             font-size: 125%;
