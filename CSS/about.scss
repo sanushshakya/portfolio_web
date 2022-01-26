@@ -1,3 +1,5 @@
+
+
 .about-page{
     margin: 0 5% 10% 25%;
     .label-name{
@@ -28,8 +30,20 @@
             }
             .skill{
                 width: 75%;
-                .w3-light-grey{
+                .bar{
+                    border: 1px solid #f2f3f4;
+                    border-radius: 20px;
+                    background-color: #f2f3f4;
                     margin: 10% 0;
+
+                    .progress{
+                        border: none;
+                        border-radius: 20px;
+                        padding-left: 5%;
+                        background-color: #93CAED;
+                        font-weight: 500;
+                        font-size: 1.1em;
+                    }
                 }
             }
         }
