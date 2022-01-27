@@ -40,9 +40,10 @@
   border: none;
   border-radius: 20px;
   padding-left: 5%;
-  background-color: #93CAED;
+  background-color: #13294B;
   font-weight: 500;
   font-size: 1.1em;
+  color: #ffffff;
 }
 
 @media screen and (max-width: 920px) {

@@ -8,7 +8,7 @@
 
 .btn {
   border: none;
-  background-color: #fcb0b3;
+  background-color: #8B0000;
   color: white;
   padding: 15px 32px;
   text-align: center;
@@ -67,12 +67,12 @@
 }
 @media screen and (max-width: 820px) {
   .header .nav .responsive {
-    background-color: #93CAED;
+    background-color: #13294B;
     margin: 0 10%;
     padding-top: 5%;
     border: 0;
     border-radius: 5%;
-    opacity: 0.6;
+    opacity: 0.9;
   }
   .header .nav .responsive a {
     display: flex;
@@ -139,7 +139,7 @@
   margin: 0 15% 10% 15%;
   border: 0;
   border-radius: 10px;
-  background-color: #93CAED;
+  background-color: #13294B;
   padding: 2% 0;
 }
 .track .record {
@@ -181,7 +181,7 @@
   margin: 5% 0 0 -20%;
 }
 .testimonials .tes-t span {
-  color: #93CAED;
+  color: #13294B;
   font-size: 500%;
 }
 
@@ -214,7 +214,7 @@
 }
 .contact-bar {
   text-align: center;
-  background-color: #93CAED;
+  background-color: #13294B;
   margin: 0 15% 10% 15%;
   border: 0;
   border-radius: 5%;
@@ -255,12 +255,12 @@
 }
 .footer .list p {
   font-size: 125%;
-  color: #93CAED;
+  color: #13294B;
 }
 .footer .list a {
   margin-left: 10%;
   text-decoration: none;
-  color: #93CAED;
+  color: #13294B;
 }
 
 @media screen and (max-width: 820px) {
