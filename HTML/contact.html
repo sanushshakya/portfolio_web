@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="../CSS/home.css">
+    <link rel="stylesheet" href="../CSS/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <div id="header" class="header">
+        <div class="nav">
+            <div class="logo">
+                <h1>Muffin</h1>
+            </div>
+            <div class="navbar" id="myNavbar">
+                <a href="../HTML/home.html">Home</a>
+                <a href="../HTML/portfolio.html">Portfolio</a>
+                <a href="../HTML/about.html">About</a>
+                <a href="../HTML/service.html">Services</a>
+                <a href="../HTML/contact.html" class="active">Contact</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-chevron-down down"></i>
+                    <i class="fa fa-chevron-up up" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+    <!-- Landing Page -->
+    <div class="contact-page">
+        <div class="contact">
+            <button class="open-button" onclick="openForm()">Discuss Project</button>
+            <div class="form-popup" id="myForm">
+                <form class="form-container">
+                    <h1>Discuss Project</h1>
+            
+                    <input type="text" placeholder="Name" name="name" required>
+
+                
+                    <input type="text" placeholder="Email" name="email" required>
+
+                   
+                    <input type="number" placeholder="+977-" name="number" required>
+
+                    <label for="name"><h4>Message</h4></label>
+                    <textarea type="text" name="message" rows="5" cols="45" >
+                    Write Something......
+                    </textarea><br/>
+                    <button type="submit" class="btn">Send Message</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+            </div>
+        </div>
+        <div class="contact contact-1">
+            <div class="label-name">
+                CONTACT
+            </div>
+            <div class="contact-info">
+                <h3 class="ci-1">Phone</h3>
+                <h5 class="ci-1">+977-9861359639</h5>
+            </div>
+            <div class="contact-info">
+                <h3 class="ci-1">Email</h3>
+                <h5 class="ci-1">shakyasanush7@gmail.com</h5>
+              
+            </div>
+            <div class="contact-info">
+                <h3 class="ci-1">Address</h3>
+                <h5 class="ci-1">Nepal, Bagmati</h5>
+                <p class="ci-1">Bhaktapur, Jagati-7</p>
+            </div>
+        </div>
+    </div>
+    <!-- Landing Page End -->
+
+    <!-- Footer -->
+    <div class="footer" id="footer">
+        <div class="foot-logo">
+            <h1>Muffin</h1>
+        </div>
+        <div class="list">
+            <label>Phone Number</label>
+            <p>9861359639</p>
+        </div>
+        <div class="list">
+            <label>Email</label>
+            <p>shakyasanush7@gmail.com</p>
+        </div>
+        <div class="list">
+            <label>Social Network</label>
+            <p>
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i>
+                </a>
+                <a  href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                </a>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+            </p>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <script src="../JS/home.js"></script>
+    <script src="../JS/contact.js"></script>
+</body>
+</html>

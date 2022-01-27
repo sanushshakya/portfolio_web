@@ -1,0 +1,96 @@
+.project-page {
+  margin: 5% 0;
+}
+.project-page .slide {
+  display: none;
+}
+.project-page .slide .landing-img {
+  margin-top: 5%;
+  max-height: 550px;
+  overflow: hidden;
+}
+.project-page .slide .landing-img img {
+  width: 100%;
+}
+.project-page .slide .description {
+  margin: 5% 0 0 20%;
+}
+.project-page .slide .description .desc {
+  color: #fcb0b3;
+  max-width: 75%;
+  margin-top: 2%;
+}
+.project-page .slide .gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.project-page .slide .gallery .img-grid {
+  flex: 25%;
+  max-height: 812px;
+  overflow: hidden;
+  margin: 5% 0;
+}
+.project-page .slide .gallery .img-grid img {
+  height: 100%;
+  margin: 20px;
+}
+.project-page .slide h1 {
+  margin-top: 5%;
+  text-align: center;
+}
+.project-page .slider {
+  text-align: center;
+}
+.project-page .slider a {
+  text-decoration: none;
+  color: #000000;
+}
+.project-page .slider .prev, .project-page .slider .next {
+  cursor: pointer;
+  width: auto;
+  padding: 1% 5%;
+  font-size: 150%;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.project-page .slider .prev:hover, .project-page .slider .next:hover {
+  background-color: #93CAED;
+  color: #ffffff;
+}
+.project-page .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .project-page .slide .gallery {
+    flex-direction: column;
+  }
+  .project-page .slide .gallery .img-grid {
+    flex-direction: column;
+    overflow: scroll;
+  }
+}
+
+/*# sourceMappingURL=project.css.map */

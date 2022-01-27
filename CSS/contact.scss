@@ -1,0 +1,133 @@
+.contact-page{
+    display: flex;
+    flex-direction: row;
+    margin: 0 5% 10% 25%;
+    .contact{
+        flex: 50%;
+        max-width: 75%;
+        .open-button{
+            background-color: #93CAED;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            opacity: 1;
+            font-size: 2em;
+            position: absolute;
+        }
+        .form-popup{
+            display: none;
+            position: relative;
+            z-index: 9;
+            width: 85%;
+            background-color: #93CAED;
+            padding-bottom: 30%;
+            box-shadow: 5px 8px 10px #000000;
+            .form-container{
+                margin-left: 5%;
+                color: #ffffff;
+
+                h1{
+                    margin-bottom: 10%;
+                    font-size: 2em;
+                }
+
+                 input{
+                     margin-bottom: 10%;
+                 }
+                input[type]{
+                    width: 100%;
+                    padding: 5px;
+                    background-color: #93CAED;
+                    border: none;
+                    border-bottom: 1px solid #ffffff;
+                }
+                input[type]:focus{
+                    outline: none;
+
+                }
+
+                input[placeholder]{
+                    color: white;
+                    font-size: 101%;
+                }
+
+                textarea[type]{
+                    background-color: #93CAED;
+                    border:none;
+                    color: #ffffff;
+                    font-size: 1.5em;
+                    max-width: 90%;
+                    border-bottom: 1px solid #ffffff;
+                }
+                textarea[type]:focus{
+                    outline: none;
+                }
+                .btn{
+                    border-radius: 5px;
+                    margin-top: 5%;
+                }
+                .btn:hover{
+                    box-shadow: 5px 8px 10px #ffffff;
+                }   
+            }
+        }
+
+        .label-name{
+            display: flex;
+            font-size: 3em;
+        }
+        .contact-info{
+            border:none;
+            box-shadow: 10px 15px 15px #93CAED;
+            width: 75%;
+            padding: 20px;
+            margin-top: 5%;
+            
+            .ci-1{
+                margin-top: 5%;
+                font-size: 110%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contact-page{
+        flex-direction: column;
+        margin: 0 0 20% 10%;
+        .contact{
+            max-width: 100%;
+            .open-button{
+                font-size: 130%;
+                margin-left: 15%;
+            }
+        }
+        .contact-1{
+            margin: 30% 0 0 0;
+            max-width: 100%;
+        }
+    }
+}
+
+@media screen and (min-width: 620px) and (max-width: 920px) {
+    .contact-page{
+        margin: 0 0 10% 15%;
+        flex-direction: column;
+        .contact{
+            .form-popup{
+                width: 120%;
+                .form-container{
+                    font-size: 130%;
+                }
+            }
+        }
+        .contact-1{
+            margin-top: 20%;
+            font-size: 150%;
+            max-width: 100%;
+        }
+    }
+    
+}

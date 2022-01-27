@@ -1,0 +1,63 @@
+
+
+.about-page{
+    margin: 0 5% 10% 25%;
+    .label-name{
+        display: flex;
+        font-size: 3em;
+    }
+    .c-1{
+        margin-top: 1%;
+        width: 85%;
+        text-align: justify;
+        font-size: 1.3em;
+        margin-bottom: 5%;
+    }
+    .c-2{
+        display: flex;
+        flex-direction: row;
+        
+        .col-1{
+            flex: 50%;
+            margin-bottom: 10%;
+
+            .education{
+                border: none;
+                width: 75%;
+                margin-top: 5%;
+                padding: 20px;
+                box-shadow: 10px 15px 15px #93CAED;
+            }
+            .skill{
+                width: 75%;
+                .bar{
+                    border: 1px solid #f2f3f4;
+                    border-radius: 20px;
+                    background-color: #f2f3f4;
+                    margin: 10% 0;
+
+                    .progress{
+                        border: none;
+                        border-radius: 20px;
+                        padding-left: 5%;
+                        background-color: #93CAED;
+                        font-weight: 500;
+                        font-size: 1.1em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .about-page{
+        margin: 0 0 0 15%;
+        font-size: 70%;
+        text-align: left;
+        word-spacing: 0;
+        .c-2{
+            flex-direction: column;
+        }
+    }
+}
